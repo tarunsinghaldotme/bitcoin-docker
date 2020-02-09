@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+ bitcoin:
+  build: ./
+  volumes:
+   - "./.bitcoin/:/root/.bitcoin/"
+  ports:
+   - 8333:8333
+   - 8332:8332
+  restart: always
